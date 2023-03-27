@@ -17,4 +17,8 @@ El programa debe:
 
 
 Tareas:
-    - Implementar Lombook, 
+    - Implementar Lombok
+    - Modificar los archivos en resources
+    - Crear clase persona, cada persona tiene una lista de pronósticos
+    - Modificar Calculadora para que lea correctamente los archivos modificados, tenga lista de personas y lista de rondas
+    - Implementar el test
