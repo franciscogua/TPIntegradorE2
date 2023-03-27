@@ -1,14 +1,18 @@
 package edu.g7l;
 
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Ronda {
 
-    // Atributos
+    // Atributos con Getters de Lombok:
+    @Getter
     private int rondaID;
-    private List<Partido> partidos;  // Que les parece que usemos listas en vez de array aqui?
+    @Getter
+    private List<Partido> partidos;
 
 
     // Constructor
@@ -17,23 +21,13 @@ public class Ronda {
         this.partidos = new ArrayList<>();
     }
 
-    // Getters
-    public int getrondaID() {
-        return rondaID;
-    }
-
-    public List<Partido> getPartidos() {
-        return partidos;
-    }
-
-
-    // Este metodo agrega partidos a la ronda.
+    // Este método agrega partidos a la ronda.
     public void addPartido(Partido partido) {
         this.partidos.add(partido);
     }
 
 
-    // Este metodo devuelve el partido de la ronda que concide con los argumentos.
+    // Este método devuelve el partido de la ronda que coincide con los argumentos.
     public Partido returnPartido(Equipo equipo1, Equipo equipo2) throws Exception {
         Partido result = null;
         for (Partido partido : partidos) {
