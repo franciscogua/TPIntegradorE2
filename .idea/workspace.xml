@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c84675-5b0e-4cec-86b5-1f6417a334e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pronostico.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pronostico.csv" afterDir="false" />
+    <list default="true" id="21c84675-5b0e-4cec-86b5-1f6417a334e3" name="Changes" comment="archivos modificados">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/resultados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resultados.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,12 +24,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -52,6 +52,25 @@
       <option name="presentableId" value="Default" />
       <updated>1679946773874</updated>
     </task>
+    <task id="LOCAL-00001" summary="archivos modificados">
+      <created>1679947558653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679947558653</updated>
+    </task>
+    <task id="LOCAL-00002" summary="archivos modificados">
+      <created>1679947745964</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679947745964</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="archivos modificados" />
+    <option name="LAST_COMMIT_MESSAGE" value="archivos modificados" />
   </component>
 </project>
