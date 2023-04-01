@@ -7,7 +7,6 @@ import java.util.Objects;
 public class Partido {
 
     // Atributos
-    int rondaID;
     @Getter
     Equipo equipo1;
     @Getter
@@ -19,8 +18,7 @@ public class Partido {
 
 
     // Constructor
-    public Partido(int rondaID, Equipo equipo1, Equipo equipo2, int golesEquipo1, int golesEquipo2) {
-        this.rondaID = rondaID;
+    public Partido(Equipo equipo1, Equipo equipo2, int golesEquipo1, int golesEquipo2) {
         this.equipo1 = equipo1;
         this.equipo2 = equipo2;
         this.golesEquipo1 = golesEquipo1;
@@ -57,16 +55,16 @@ public class Partido {
 
     // Sobreescribimos estos métodos para poder comparar Partidos.
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Partido)) return false;
-        Partido partido = (Partido) o;
-        return rondaID == partido.rondaID && equipo1.equals(partido.equipo1) && equipo2.equals(partido.equipo2);
+        if (!(o instanceof Partido partido)) return false;
+        return equipo1.equals(partido.equipo1) && equipo2.equals(partido.equipo2);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(rondaID, equipo1, equipo2);
+        return Objects.hash(equipo1, equipo2);
     }
 }

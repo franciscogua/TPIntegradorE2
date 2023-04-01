@@ -1,10 +1,14 @@
 package edu.g7l;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Persona {
+    @Getter
     private String nombre;
+    @Getter
     private final List<Pronostico> pronosticoList;
 
 

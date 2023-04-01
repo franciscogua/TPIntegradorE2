@@ -20,39 +20,81 @@ public class Calculadora {
             pronostico = FileReader(args[1]);
 
             System.out.println("Bienvenido a la calculadora de puntajes.");  // Mensaje de bienvenida
-            int rondaID = 1; // En esta entrega, existe una única ronda
 
-            Ronda ronda = new Ronda(rondaID);
 
-            // Bloque para poblar la ronda creada con partidos, omitiendo la primera línea (encabezado)
+
+            // int rondaID = 1; // En esta entrega, existe una única ronda
+
+            List<Ronda> rondaList = new ArrayList<>();
+            rondaList.add(new Ronda(1));
+
+            // Bloque para poblar la lista de rondaList creada con partidos, omitiendo la primera línea (encabezado)
             for (int i = 1; i < resultados.size(); i++) {
                 String[] linea = resultados.get(i).split(",");
-                ronda.addPartido(new Partido(ronda.getRondaID(),
-                        new Equipo(linea[0]),
-                        new Equipo(linea[3]),
-                        Integer.parseInt(linea[1]),
-                        Integer.parseInt(linea[2])));
+                // Agregar test para que la línea sea adecuada (tamaño y que sea parseable a int)
+                int estaRondaID = Integer.parseInt(linea[0]);
+                boolean rondaExiste = false;
+
+                // Este for crea la ronda, si esta no existe
+                for(Ronda ronda: rondaList) {
+                    if (ronda.getRondaID() == estaRondaID) {
+                        rondaExiste = true;
+                        break;
+                    }
+                }
+
+                if (!rondaExiste) {
+                    rondaList.add(new Ronda(estaRondaID));
+                }
+
+                for(Ronda ronda: rondaList) {
+                    if (ronda.getRondaID() == estaRondaID) {
+                        ronda.addPartido(new Partido(new Equipo(linea[1]),
+                                new Equipo(linea[4]),
+                                Integer.parseInt(linea[2]),
+                                Integer.parseInt(linea[3])));
+                    }
+                }
             }
 
-            // Creamos una lista para los pronósticos
-            List<Pronostico> pronosticoList = new ArrayList<>();
+            // Creamos una lista para las personas
+            List<Persona> personaList = new ArrayList<>();
+
+
 
             // Poblamos la lista de pronósticos, omitiendo la primera línea (encabezado)
             for (int i = 1; i < pronostico.size(); i++) {
+                String[] linea = pronostico.get(i).split(",");  // Aislamos la línea
+
+
+
                 // La clase pronóstico tiene cuatro argumentos, tres de ellos son declarados aquí.
-                Partido partido;
+                String estaPersona = linea[0];
+                int estaRondaID = Integer.parseInt(linea[1]);
+                Partido partido = null;
                 Equipo equipo;
                 ResultadoEnum resultado;
 
-                String[] linea = pronostico.get(i).split(",");  // Aislamos la línea
-                Equipo equipo1 = new Equipo(linea[0]);  // Creamos los equipos del pronóstico
-                Equipo equipo2 = new Equipo(linea[4]);
-                partido = ronda.returnPartido(equipo1, equipo2);  // Buscamos el partido correspondiente en la ronda
+                if (personaList.size() == 0) {
+                    personaList.add(new Persona(estaPersona));
+                }
+
+
+                Equipo equipo1 = new Equipo(linea[2]);  // Creamos los equipos del pronóstico
+                Equipo equipo2 = new Equipo(linea[6]);
+
+                // Buscamos el partido correspondiente en la ronda
+                for (Ronda ronda : rondaList) {
+                    if (ronda.getRondaID() == estaRondaID) {
+                        partido = ronda.returnPartido(equipo1, equipo2);
+                        break;
+                    }
+                }
 
                 // Aquí definimos un array de boolean para codificar el pronóstico
                 boolean[] comparador = new boolean[3];
-                for (int j = 1; j < 4; j++) {
-                    comparador[j - 1] = linea[j].equals("X");
+                for (int j = 3; j < 6; j++) {
+                    comparador[j - 3] = linea[j].equals("X");
                 }
 
                 if (Arrays.equals(comparador, new boolean[]{true, false, false})) {  // Significa que gana el equipo 1
@@ -70,18 +112,27 @@ public class Calculadora {
                 }
 
                 // Por último agregamos un pronóstico a la lista, con las variables que procesamos de la línea
-                pronosticoList.add(new Pronostico(rondaID, partido, equipo, resultado));
+
+                for (Persona persona : personaList) {
+                    if (persona.getNombre().equals(estaPersona)) {
+                        persona.addPronostico(new Pronostico(estaRondaID, partido, equipo, resultado));
+                    }
+                }
             }
 
             // Declaramos e inicializamos el puntaje
-            int puntaje = 0;
+
 
             // Iterando por los pronósticos de la lista de pronósticos, vamos sumando el puntaje
-            for (Pronostico p : pronosticoList) {
-                puntaje += p.puntos();
+            for (Persona p : personaList) {
+                int puntaje = 0;
+                for (Pronostico q : p.getPronosticoList()) {
+                    puntaje += q.puntos();
+                }
+                System.out.printf("Paricipante: %s, Puntaje = %d%n", p.getNombre(), puntaje);
             }
 
-            System.out.printf("Puntaje = %d%n", puntaje);
+
 
         }
         catch (ArrayIndexOutOfBoundsException e) {
@@ -100,4 +151,6 @@ public class Calculadora {
     public static List<String> FileReader(String archivo) throws IOException {
         return Files.readAllLines(Paths.get("src/main/resources/" + archivo));
     }
+
+
 }
