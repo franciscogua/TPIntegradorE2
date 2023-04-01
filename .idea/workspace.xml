@@ -4,7 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="d9db2dda-63d6-4e46-8c50-46383832cbf8" name="Changes" comment="workspace.xml">
       <change beforePath="$PROJECT_DIR$/src/main/resources/resultados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resultados.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Calculadora.class" afterDir="false" />
@@ -13,11 +12,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Pronostico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Pronostico.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/ResultadoEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/ResultadoEnum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Ronda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Ronda.class" afterDir="false" />
-=======
-    <list default="true" id="21c84675-5b0e-4cec-86b5-1f6417a334e3" name="Changes" comment="archivos modificados">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resultados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resultados.csv" afterDir="false" />
->>>>>>> main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +21,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-<<<<<<< HEAD
   <component name="TaskManager">
     <servers />
   </component>
@@ -41,63 +34,5 @@
         </entry>
       </map>
     </option>
-=======
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2NbxqVw2SWivpeY5Ck9lt9knEJM" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="21c84675-5b0e-4cec-86b5-1f6417a334e3" name="Changes" comment="" />
-      <created>1679946773874</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1679946773874</updated>
-    </task>
-    <task id="LOCAL-00001" summary="archivos modificados">
-      <created>1679947558653</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1679947558653</updated>
-    </task>
-    <task id="LOCAL-00002" summary="archivos modificados">
-      <created>1679947745964</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1679947745964</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
-    <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="archivos modificados" />
-    <option name="LAST_COMMIT_MESSAGE" value="archivos modificados" />
->>>>>>> main
   </component>
 </project>
