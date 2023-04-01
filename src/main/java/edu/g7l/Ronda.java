@@ -40,6 +40,12 @@ public class Ronda {
         return result;
     }
 
+    @Override
+    public String toString() {
+        return "Ronda " + rondaID +
+                "\n\tPartidos: " + partidos;
+    }
+
 
     /*
     public int puntos() {

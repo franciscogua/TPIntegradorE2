@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9db2dda-63d6-4e46-8c50-46383832cbf8" name="Changes" comment="Funciona mal (pero funciona)">
+    <list default="true" id="d9db2dda-63d6-4e46-8c50-46383832cbf8" name="Changes" comment="cualquier cosa">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Calculadora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Calculadora.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Partido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Partido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Pronostico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Pronostico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/ResultadoEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/ResultadoEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Ronda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Ronda.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pronostico.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pronostico.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resultados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resultados.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Partido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Partido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Ronda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Ronda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +18,37 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b3062d8a-ee8b-4bf3-b5ec-39117e667de3" />
+        <option name="url" value="https://github.com/franciscogua/TPIntegradorE2.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NphGhpUsQmoTVoemNVsaMUgIRS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propCompiler"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="default" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="edu.g7l.Calculadora" />
@@ -59,7 +82,35 @@
       <option name="project" value="LOCAL" />
       <updated>1680363140887</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="cualquier cosa">
+      <created>1680364583861</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680364583861</updated>
+    </task>
+    <task id="LOCAL-00005" summary="cualquier cosa">
+      <created>1680364590435</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680364590435</updated>
+    </task>
+    <task id="LOCAL-00006" summary="cualquier cosa">
+      <created>1680364667974</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680364667974</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9db2dda-63d6-4e46-8c50-46383832cbf8" name="Changes" comment="cualquier cosa" />
+      <created>1680366836479</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680366836479</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,6 +127,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="workspace.xml arreglado" />
     <MESSAGE value="Funciona mal (pero funciona)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funciona mal (pero funciona)" />
+    <MESSAGE value="cualquier cosa" />
+    <option name="LAST_COMMIT_MESSAGE" value="cualquier cosa" />
   </component>
 </project>

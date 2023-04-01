@@ -67,4 +67,9 @@ public class Partido {
     public int hashCode() {
         return Objects.hash(equipo1, equipo2);
     }
+
+    @Override
+    public String toString() {
+        return equipo1.getNombre() + " : " + equipo2.getNombre();
+    }
 }

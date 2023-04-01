@@ -29,7 +29,7 @@ public class Calculadora {
             for (int i = 1; i < resultados.size(); i++) {
                 String[] linea = resultados.get(i).split(",");
 
-                // Agregar test para que la línea sea adecuada (tamaño y que sea parseable a int)
+                // Agregar test para que la línea sea adecuada (tamaño y que sea transformable a int)
 
 
                 int estaRondaID = Integer.parseInt(linea[0]);
@@ -55,6 +55,10 @@ public class Calculadora {
                                 Integer.parseInt(linea[3])));
                     }
                 }
+            }
+
+            for (Ronda ronda : rondaList) {
+                System.out.println(ronda.toString());
             }
 
             // Creamos una lista para las personas
@@ -129,7 +133,7 @@ public class Calculadora {
                 for (Pronostico q : p.getPronosticoList()) {
                     puntaje += q.puntos();
                 }
-                System.out.printf("Paricipante: %s, Puntaje = %d%n", p.getNombre(), puntaje);
+                System.out.printf("Participante: %s, Puntaje = %d%n", p.getNombre(), puntaje);
             }
 
 
