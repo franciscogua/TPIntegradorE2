@@ -16,8 +16,7 @@ El programa debe:
 
 
 Tareas:
-    - Implementar Lombok
-    - Modificar los archivos en resources
-    - Crear clase persona, cada persona tiene una lista de pronósticos
-    - Modificar Calculadora para que lea correctamente los archivos modificados, tenga lista de personas y lista de rondas
-    - Implementar el test
+    - Implementar Lombok (probar los constructores)
+    - Sobreescribir en la clase persona el toString y ver dónde falla la calculadora con un toString en los loops
+    - Testear que la linea tenga 6 elementos: [0] (número de rondas) tiene que ser mayor o igual a 1, y [2] y [3] (goles) tienen que ser enteros mayores o iguales a 0,
+    - Implementar el test de 2 rondas consecutivas
