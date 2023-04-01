@@ -1,5 +1,4 @@
-# TP Integrador
-## Repositorio de Testing.
+# TP Integrador Entrega 2
 
 Tareas de la Entrega 2:  
 
