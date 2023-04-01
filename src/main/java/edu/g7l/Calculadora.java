@@ -22,16 +22,16 @@ public class Calculadora {
             System.out.println("Bienvenido a la calculadora de puntajes.");  // Mensaje de bienvenida
 
 
-
-            // int rondaID = 1; // En esta entrega, existe una única ronda
-
             List<Ronda> rondaList = new ArrayList<>();
             rondaList.add(new Ronda(1));
 
             // Bloque para poblar la lista de rondaList creada con partidos, omitiendo la primera línea (encabezado)
             for (int i = 1; i < resultados.size(); i++) {
                 String[] linea = resultados.get(i).split(",");
+
                 // Agregar test para que la línea sea adecuada (tamaño y que sea parseable a int)
+
+
                 int estaRondaID = Integer.parseInt(linea[0]);
                 boolean rondaExiste = false;
 
