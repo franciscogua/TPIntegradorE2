@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d9db2dda-63d6-4e46-8c50-46383832cbf8" name="Changes" comment="workspace.xml">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resultados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resultados.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Calculadora.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Equipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Equipo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Partido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Partido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Pronostico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Pronostico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/ResultadoEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/ResultadoEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Ronda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Ronda.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
