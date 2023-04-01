@@ -1,11 +1,16 @@
 package edu.g7l;
 
+import lombok.Getter;
+
 public class Pronostico {
 
     //Atributos:
     private int rondaID;
+    @Getter
     private Partido partido;
+    @Getter
     private Equipo equipo;
+    @Getter
     private ResultadoEnum resultado;
 
 
@@ -17,23 +22,10 @@ public class Pronostico {
         this.resultado = resultado;
     }
 
-    //Getters
-    public Partido getPartido() {
-        return partido;
-    }
 
-    public Equipo getEquipo() {
-        return equipo;
-    }
-
-    public ResultadoEnum getResultado() {
-        return resultado;
-    }
-
-
-    // Este metodo devuelve el puntaje del pronostico
+    // Este método devuelve el puntaje del pronóstico
     public int puntos() {
         ResultadoEnum resultadoPartido = this.partido.resultado(this.equipo);
-        return resultadoPartido.equals(resultado) ? 1 : 0;  // Operador ternario, version mas simple del if()
+        return resultadoPartido.equals(resultado) ? 1 : 0;  // Operador ternario, version más simple del if()
     }
 }

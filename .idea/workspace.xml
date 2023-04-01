@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="d9db2dda-63d6-4e46-8c50-46383832cbf8" name="Changes" comment="workspace.xml">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resultados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resultados.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Calculadora.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Equipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Equipo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Partido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Partido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Pronostico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Pronostico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/ResultadoEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/ResultadoEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/g7l/Ronda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/g7l/Ronda.class" afterDir="false" />
+=======
     <list default="true" id="21c84675-5b0e-4cec-86b5-1f6417a334e3" name="Changes" comment="archivos modificados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/resultados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resultados.csv" afterDir="false" />
+>>>>>>> main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +27,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+=======
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -72,5 +98,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="archivos modificados" />
     <option name="LAST_COMMIT_MESSAGE" value="archivos modificados" />
+>>>>>>> main
   </component>
 </project>

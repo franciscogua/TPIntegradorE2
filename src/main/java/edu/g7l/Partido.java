@@ -1,14 +1,20 @@
 package edu.g7l;
 
+import lombok.Getter;
+
 import java.util.Objects;
 
 public class Partido {
 
     // Atributos
     int rondaID;
+    @Getter
     Equipo equipo1;
+    @Getter
     Equipo equipo2;
+    @Getter
     int golesEquipo1;
+    @Getter
     int golesEquipo2;
 
 
@@ -22,25 +28,7 @@ public class Partido {
     }
 
 
-    //Getters
-    public Equipo getEquipo1() {
-        return equipo1;
-    }
-
-    public Equipo getEquipo2() {
-        return equipo2;
-    }
-
-    public int getGolesEquipo1() {
-        return golesEquipo1;
-    }
-
-    public int getGolesEquipo2() {
-        return golesEquipo2;
-    }
-
-
-    // Este metodo devuelve el estatus del equipo usado como argumento (GANADOR o PERDEDOR), o EMPATE si es empate
+    // Este método devuelve el estatus del equipo usado como argumento (GANADOR o PERDEDOR), o EMPATE si es empate
     public ResultadoEnum resultado(Equipo equipo) {
         ResultadoEnum resultado = null;
         if (equipo.equals(this.equipo1) || equipo.equals(this.equipo2)) {
@@ -56,22 +44,18 @@ public class Partido {
     }
 
 
-    // Este metodo compara si los equipos usados como argumento coinciden con los del partido
+    // Este método compara si los equipos usados como argumento coinciden con los del partido
     public boolean compararPartido(Equipo equipo1, Equipo equipo2) {
         boolean a = this.equipo1.equals(equipo1);
         boolean b = this.equipo2.equals(equipo2);
         boolean c = this.equipo1.equals(equipo2);
         boolean d = this.equipo2.equals(equipo1);
-        if ((a && b) || (c && d)) {
-            return true;
-        } else {
-            return false;
-        }
+        return (a && b) || (c && d);
     }
 
 
 
-    // Sobreescribimos estos metodos para poder comparar Partidos.
+    // Sobreescribimos estos métodos para poder comparar Partidos.
 
     @Override
     public boolean equals(Object o) {
