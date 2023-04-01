@@ -22,7 +22,9 @@ public class Persona {
         this.pronosticoList.add(pronostico);
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Persona: " + nombre + "\n" +
+                "\tPronosticos: \n\t\t" + pronosticoList;
+    }
 }

@@ -57,34 +57,40 @@ public class Calculadora {
                 }
             }
 
-            for (Ronda ronda : rondaList) {
-                System.out.println(ronda.toString());
-            }
+            // Revisamos que la lista de rondas esta correcta
+//            for (Ronda ronda : rondaList) {
+//                System.out.println(ronda.toString());
+//            }
+
 
             // Creamos una lista para las personas
             List<Persona> personaList = new ArrayList<>();
 
-
-
-            // Poblamos la lista de pronósticos, omitiendo la primera línea (encabezado)
+            // Poblamos la lista de personas con pronósticos, omitiendo la primera línea (encabezado)
             for (int i = 1; i < pronostico.size(); i++) {
                 String[] linea = pronostico.get(i).split(",");  // Aislamos la línea
 
-
-
-                // La clase pronóstico tiene cuatro argumentos, tres de ellos son declarados aquí.
-                String estaPersona = linea[0];
-                int estaRondaID = Integer.parseInt(linea[1]);
+                // Generamos variables útiles
+                String estaPersona = linea[0];  // El nombre de la persona en esta línea
+                int estaRondaID = Integer.parseInt(linea[1]); // La ronda de esta línea
                 Partido partido = null;
                 Equipo equipo;
                 ResultadoEnum resultado;
+                boolean personaExiste = false;
 
-                if (personaList.size() == 0) {
+                // Buscamos si la persona ya existe en la lista, si no, la creamos
+                for (Persona persona : personaList) {
+                    if (estaPersona.equals(persona.getNombre())) {
+                        personaExiste = true;
+                        break;
+                    }
+                }
+                if (!personaExiste) {
                     personaList.add(new Persona(estaPersona));
                 }
 
-
-                Equipo equipo1 = new Equipo(linea[2]);  // Creamos los equipos del pronóstico
+                // Creamos los equipos del pronóstico
+                Equipo equipo1 = new Equipo(linea[2]);
                 Equipo equipo2 = new Equipo(linea[6]);
 
                 // Buscamos el partido correspondiente en la ronda
@@ -124,7 +130,10 @@ public class Calculadora {
                 }
             }
 
-            // Declaramos e inicializamos el puntaje
+//            for (Persona persona : personaList) {
+//                System.out.println(persona.toString());
+//            }
+
 
 
             // Iterando por los pronósticos de la lista de pronósticos, vamos sumando el puntaje
@@ -133,7 +142,7 @@ public class Calculadora {
                 for (Pronostico q : p.getPronosticoList()) {
                     puntaje += q.puntos();
                 }
-                System.out.printf("Participante: %s, Puntaje = %d%n", p.getNombre(), puntaje);
+                System.out.printf("%s: %d%n", p.getNombre(), puntaje);
             }
 
 

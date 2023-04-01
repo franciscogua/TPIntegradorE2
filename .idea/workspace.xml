@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9db2dda-63d6-4e46-8c50-46383832cbf8" name="Changes" comment="cualquier cosa">
+    <list default="true" id="d9db2dda-63d6-4e46-8c50-46383832cbf8" name="Changes" comment="Revisando código">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Calculadora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Partido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Partido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Ronda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Ronda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Pronostico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Pronostico.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,14 @@
       <option name="presentableId" value="Default" />
       <updated>1680366836479</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Revisando código">
+      <created>1680367943448</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680367943448</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +135,7 @@
     <MESSAGE value="workspace.xml arreglado" />
     <MESSAGE value="Funciona mal (pero funciona)" />
     <MESSAGE value="cualquier cosa" />
-    <option name="LAST_COMMIT_MESSAGE" value="cualquier cosa" />
+    <MESSAGE value="Revisando código" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revisando código" />
   </component>
 </project>

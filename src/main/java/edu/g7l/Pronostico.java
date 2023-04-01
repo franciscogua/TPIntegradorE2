@@ -28,4 +28,12 @@ public class Pronostico {
         ResultadoEnum resultadoPartido = this.partido.resultado(this.equipo);
         return resultadoPartido.equals(resultado) ? 1 : 0;  // Operador ternario, version más simple del if()
     }
+
+    @Override
+    public String toString() {
+        return "\n\t\tRonda: " + rondaID +
+                " | partido: " + partido +
+                " | " + equipo.getNombre() +
+                " " + resultado;
+    }
 }
