@@ -10,9 +10,9 @@ public class Ronda {
 
     // Atributos con Getters de Lombok:
     @Getter
-    private int rondaID;
+    private final int rondaID;
     @Getter
-    private List<Partido> partidos;
+    private final List<Partido> partidos;
 
 
     // Constructor

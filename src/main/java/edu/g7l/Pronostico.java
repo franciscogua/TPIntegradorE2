@@ -5,13 +5,13 @@ import lombok.Getter;
 public class Pronostico {
 
     //Atributos:
-    private int rondaID;
+    private final int rondaID;
     @Getter
-    private Partido partido;
+    private final Partido partido;
     @Getter
-    private Equipo equipo;
+    private final Equipo equipo;
     @Getter
-    private ResultadoEnum resultado;
+    private final ResultadoEnum resultado;
 
 
     // Constructor
