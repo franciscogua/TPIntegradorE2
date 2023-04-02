@@ -7,19 +7,24 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-// Este programa requiere dos argumentos: Los nombres de los archivos de resultados y pronósticos
-// en la carpeta 'resources', en ese orden.
+/* Este programa requiere dos argumentos: Los nombres de los archivos de resultados y pronósticos
+en la carpeta 'resources', en ese orden. */
 
 public class Calculadora {
     public static void main(String[] args) {
-        List<String> resultados;  // Inicializamos las listas
+
+        // Inicializamos las listas
+        List<String> resultados;
         List<String> pronostico;
 
         try {
-            resultados = FileReader(args[0]);  // Leemos los archivos, si existen
+
+            // Leemos los archivos, si existen
+            resultados = FileReader(args[0]);
             pronostico = FileReader(args[1]);
 
-            System.out.println("Bienvenido a la calculadora de puntajes.");  // Mensaje de bienvenida
+            // Mensaje de bienvenida
+            System.out.println("Bienvenido a la calculadora de puntajes.");
 
 
             List<Ronda> rondaList = new ArrayList<>();
@@ -57,10 +62,10 @@ public class Calculadora {
                 }
             }
 
-            // Revisamos que la lista de rondas esta correcta
-//            for (Ronda ronda : rondaList) {
-//                System.out.println(ronda.toString());
-//            }
+            /* Revisamos que la lista de rondas esta correcta
+            for (Ronda ronda : rondaList) {
+            System.out.println(ronda.toString());
+             } */
 
 
             // Creamos una lista para las personas
@@ -107,13 +112,13 @@ public class Calculadora {
                     comparador[j - 3] = linea[j].equals("X");
                 }
 
-                if (Arrays.equals(comparador, new boolean[]{true, false, false})) {  // Significa que gana el equipo 1
+                if (Arrays.equals(comparador, new boolean[]{true, false, false})) {  // Gana equipo 1
                     equipo = equipo1;  // El equipo ganador
                     resultado = ResultadoEnum.GANADOR;
-                } else if (Arrays.equals(comparador, new boolean[]{false, false, true})) {  // Significa que gana el equipo 2
+                } else if (Arrays.equals(comparador, new boolean[]{false, false, true})) {  // Gana equipo 2
                     equipo = equipo2;  // El equipo ganador
                     resultado = ResultadoEnum.GANADOR;
-                } else if (Arrays.equals(comparador, new boolean[]{false, true, false})) {  // Significa empate
+                } else if (Arrays.equals(comparador, new boolean[]{false, true, false})) {  // Empate
                     equipo = equipo1;  // Si hay empate esto no importa, pero igual se define (también puede ser equipo2)
                     resultado = ResultadoEnum.EMPATE;
                 } else {
@@ -122,7 +127,6 @@ public class Calculadora {
                 }
 
                 // Por último agregamos un pronóstico a la lista, con las variables que procesamos de la línea
-
                 for (Persona persona : personaList) {
                     if (persona.getNombre().equals(estaPersona)) {
                         persona.addPronostico(new Pronostico(estaRondaID, partido, equipo, resultado));
@@ -130,10 +134,9 @@ public class Calculadora {
                 }
             }
 
-//            for (Persona persona : personaList) {
-//                System.out.println(persona.toString());
-//            }
-
+            /* for (Persona persona : personaList) {
+            System.out.println(persona.toString());
+            } */
 
 
             // Iterando por los pronósticos de la lista de pronósticos, vamos sumando el puntaje
@@ -144,9 +147,6 @@ public class Calculadora {
                 }
                 System.out.printf("%s: %d%n", p.getNombre(), puntaje);
             }
-
-
-
         }
         catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("ERROR! Argumentos incorrectos.");
@@ -164,6 +164,4 @@ public class Calculadora {
     public static List<String> FileReader(String archivo) throws IOException {
         return Files.readAllLines(Paths.get("src/main/resources/" + archivo));
     }
-
-
 }

@@ -1,26 +1,28 @@
 package edu.g7l;
 
-import lombok.Getter;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
 public class Persona {
-    @Getter
+
+    // Atributos
     private String nombre;
-    @Getter
     private final List<Pronostico> pronosticoList;
 
-
+    // Constructor
     public Persona(String nombre) {
         this.nombre = nombre;
-        this.pronosticoList = new ArrayList<Pronostico>();
+        this.pronosticoList = new ArrayList<>();
     }
 
 
     public void addPronostico(Pronostico pronostico) {
         this.pronosticoList.add(pronostico);
     }
+
 
     @Override
     public String toString() {

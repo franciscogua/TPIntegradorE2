@@ -1,25 +1,18 @@
 package edu.g7l;
 
 import java.util.Objects;
-import lombok.Getter;
-import lombok.Setter;
 
+import lombok.Data;
+
+@Data
 public class Equipo {
 
-    // Atributos con Getters y Setters de Lombok:
-    @Getter
+    // Atributos
     private final String nombre;
-    @Getter @Setter
     private String descripcion;
 
 
-    // Constructor, por ahora no usamos el atributo descripción
-    public Equipo(String nombre) {
-        this.nombre = nombre;
-        this.descripcion = "";
-    }
-
-    // Hacemos override a estos métodos para poder comparar Equipos entre sí
+    // Sobrescribimos estos métodos para poder comparar Equipos entre sí
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

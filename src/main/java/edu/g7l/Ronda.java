@@ -1,25 +1,24 @@
 package edu.g7l;
 
 
-import lombok.Getter;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
 public class Ronda {
 
-    // Atributos con Getters de Lombok:
-    @Getter
+    // Atributos
     private final int rondaID;
-    @Getter
     private final List<Partido> partidos;
-
 
     // Constructor
     public Ronda(int rondaID) {
         this.rondaID = rondaID;
         this.partidos = new ArrayList<>();
     }
+
 
     // Este método agrega partidos a la ronda.
     public void addPartido(Partido partido) {
@@ -39,6 +38,7 @@ public class Ronda {
         if (result == null) throw new Exception();
         return result;
     }
+
 
     @Override
     public String toString() {

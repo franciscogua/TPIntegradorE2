@@ -7,13 +7,24 @@
     <list default="true" id="d9db2dda-63d6-4e46-8c50-46383832cbf8" name="Changes" comment="Revisando código">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Calculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Equipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Partido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Partido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Persona.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Pronostico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Pronostico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/g7l/Ronda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/g7l/Ronda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/g7l/CalculadoraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/g7l/CalculadoraTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,12 +54,23 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "F:/Users/Francisco/Workspaces/Git/TPIntegradorE2",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "project.propCompiler"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="edu.g7l" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="default" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="edu.g7l.Calculadora" />
