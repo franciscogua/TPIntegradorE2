@@ -141,12 +141,9 @@ public class Calculadora {
 
             // Iterando por los pronósticos de la lista de pronósticos, vamos sumando el puntaje
             for (Persona p : personaList) {
-                int puntaje = 0;
-                for (Pronostico q : p.getPronosticoList()) {
-                    puntaje += q.puntos();
-                }
-                System.out.printf("%s: %d%n", p.getNombre(), puntaje);
+                System.out.printf("%s: %d%n", p.getNombre(), contarPuntos(p));
             }
+
         }
         catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("ERROR! Argumentos incorrectos.");
@@ -163,5 +160,14 @@ public class Calculadora {
 
     public static List<String> FileReader(String archivo) throws IOException {
         return Files.readAllLines(Paths.get("src/main/resources/" + archivo));
+    }
+
+    //Método contarPuntos:
+    public static int contarPuntos(Persona p) {
+            int puntaje = 0;
+            for (Pronostico q : p.getPronosticoList()) {
+                puntaje += q.puntos();
+            }
+            return puntaje;
     }
 }

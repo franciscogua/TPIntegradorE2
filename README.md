@@ -16,7 +16,5 @@ El programa debe:
 
 
 Tareas:
-    - Implementar Lombok (probar los constructores)
-    - Sobreescribir en la clase persona el toString y ver dónde falla la calculadora con un toString en los loops
-    - Testear que la linea tenga 6 elementos: [0] (número de rondas) tiene que ser mayor o igual a 1, y [2] y [3] (goles) tienen que ser enteros mayores o iguales a 0,
-    - Implementar el test de 2 rondas consecutivas
+    - Sobreescribir en la clase persona el toString y ver dónde falla la calculadora con un toString en los loops.
+    - Testear que la linea tenga 6 elementos: [0] (número de rondas) tiene que ser mayor o igual a 1, y [2] y [3] (goles) tienen que ser enteros mayores o iguales a 0.
