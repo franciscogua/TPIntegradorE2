@@ -3,7 +3,7 @@ package edu.g7l;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@AllArgsConstructor @Data
+@Data
 public class Pronostico {
 
     // Atributos:

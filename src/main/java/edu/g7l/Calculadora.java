@@ -1,5 +1,4 @@
 package edu.g7l;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -24,8 +23,10 @@ public class Calculadora {
             pronostico = FileReader(args[1]);
 
             // Mensaje de bienvenida
-            System.out.println("Bienvenido a la calculadora de puntajes.");
-
+            System.out.printf("""
+                    Calculadora de Puntajes © 2023 por Grupo-7L y está bajo licencia CC BY-NC-ND 4.0.
+                    Para ver una copia de esta licencia, visita http://creativecommons.org/licenses/by-nc-nd/4.0/%n%n""");
+            System.out.printf("Se computarán: 1 punto por cada pronóstico acertado.%n");
 
             List<Ronda> rondaList = new ArrayList<>();
             rondaList.add(new Ronda(1));

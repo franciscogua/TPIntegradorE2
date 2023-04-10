@@ -2,16 +2,21 @@ package edu.g7l;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NonNull;
 
 import java.util.Objects;
 
-@AllArgsConstructor @Data
+@Data
 public class Partido {
 
     // Atributos
+    @NonNull
     Equipo equipo1;
+    @NonNull
     Equipo equipo2;
+    @NonNull
     int golesEquipo1;
+    @NonNull
     int golesEquipo2;
 
 
