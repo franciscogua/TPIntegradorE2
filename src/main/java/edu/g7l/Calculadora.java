@@ -1,4 +1,5 @@
 package edu.g7l;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -35,7 +36,10 @@ public class Calculadora {
             for (int i = 1; i < resultados.size(); i++) {
                 String[] linea = resultados.get(i).split(",");
 
-                // Agregar test para que la línea sea adecuada (tamaño y que sea transformable a int)
+                if (linea.length != 5) {
+                    System.out.printf("Error en el número de campos en la linea %d de resultados.", i);
+                    System.exit(1);
+                }
 
 
                 int estaRondaID = Integer.parseInt(linea[0]);
@@ -63,10 +67,10 @@ public class Calculadora {
                 }
             }
 
-            /* Revisamos que la lista de rondas esta correcta
+            // Revisamos que la lista de rondas está correcta
             for (Ronda ronda : rondaList) {
             System.out.println(ronda.toString());
-             } */
+             }
 
 
             // Creamos una lista para las personas
@@ -75,6 +79,11 @@ public class Calculadora {
             // Poblamos la lista de personas con pronósticos, omitiendo la primera línea (encabezado)
             for (int i = 1; i < pronostico.size(); i++) {
                 String[] linea = pronostico.get(i).split(",");  // Aislamos la línea
+
+                if (linea.length != 7) {
+                    System.out.printf("Error en el número de campos en la linea %d de pronosticos.", i);
+                    System.exit(1);
+                }
 
                 // Generamos variables útiles
                 String estaPersona = linea[0];  // El nombre de la persona en esta línea
@@ -135,9 +144,9 @@ public class Calculadora {
                 }
             }
 
-            /* for (Persona persona : personaList) {
+            for (Persona persona : personaList) {
             System.out.println(persona.toString());
-            } */
+            }
 
 
             // Iterando por los pronósticos de la lista de pronósticos, vamos sumando el puntaje
@@ -148,13 +157,19 @@ public class Calculadora {
         }
         catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("ERROR! Argumentos incorrectos.");
+            System.exit(1);
         }
-        catch (RuntimeException ignored) {}
+        catch (RuntimeException re) {
+            System.out.println("ERROR! Algún campo no es parseable.");
+            System.exit(1);
+        }
         catch (IOException ioe) {
             System.out.println("ERROR! Algún archivo de entrada no encontrado.");
+            System.exit(1);
         }
         catch (Exception e) {
             System.out.println("ERROR! Algún pronóstico no coincide con los partidos de los resultados.");
+            System.exit(1);
         }
     }
 
